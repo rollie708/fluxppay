@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <meta name="description" content="FluxP is building a simpler way to pay for products and services with crypto." />
+    <meta property="og:title" content="FluxP — Crypto payments. Without the friction." />
+    <meta property="og:description" content="Explore the FluxP interactive product preview." />
+    <meta property="og:type" content="website" />
+    <title>FluxP — Crypto payments. Without the friction.</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header" id="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+          <a class="brand" href="#top" aria-label="FluxP home">
+            <span class="brand-mark" aria-hidden="true"><span class="ribbon ribbon-a"></span><span class="ribbon ribbon-b"></span></span>
+            <span class="brand-name">Flux<span>P</span></span>
+          </a>
+          <div class="desktop-nav">
+            <a href="#how-it-works">How it works</a>
+            <a href="#demo">Demo</a>
+            <a href="#businesses">For businesses</a>
+            <a href="#roadmap">Roadmap</a>
+          </div>
+          <a class="button button-small button-dark nav-cta" href="#demo">Explore demo <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="#how-it-works">How it works <span>01</span></a>
+          <a href="#demo">Demo <span>02</span></a>
+          <a href="#businesses">For businesses <span>03</span></a>
+          <a href="#roadmap">Roadmap <span>04</span></a>
+          <a class="button button-dark" href="#demo">Explore demo <span>↗</span></a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-pad">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Crypto payments, reimagined</div>
+            <h1>Pay with crypto.<br /><em>Without the complexity.</em></h1>
+            <p class="hero-lead">FluxP is building a simpler way to pay for products and services with crypto through a clear, intuitive checkout experience.</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#demo">Explore the demo <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#how-it-works">How it works <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-notes">
+              <div><strong>01</strong><span>Simple checkout</span></div>
+              <div><strong>02</strong><span>Clear payment details</span></div>
+              <div><strong>03</strong><span>Transparent status</span></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="FluxP payment preview">
+            <div class="curve curve-one"></div><div class="curve curve-two"></div>
+            <div class="hero-caption"><span class="live-dot"></span> Product preview <span class="caption-line"></span> 01 / 04</div>
+            <div class="preview-window">
+              <div class="preview-topbar"><span class="merchant-mark">n</span><span>north / form</span><span class="preview-lock">Preview only <span>⌁</span></span></div>
+              <div class="preview-content">
+                <div class="preview-product">
+                  <div class="product-art art-pack"><span class="pack-flap"></span><span class="pack-body"></span><span class="pack-strap"></span></div>
+                  <div><span class="mini-label">Your order</span><h3>Everyday Backpack</h3><p>North / Form · 1 item</p></div>
+                  <strong>$65.00</strong>
+                </div>
+                <div class="preview-rule"></div>
+                <div class="preview-label-row"><span>Pay with</span><span class="sample-pill">Sample conversion</span></div>
+                <div class="asset-preview"><span class="asset-icon usdc">$</span><strong>USDC</strong><span class="asset-network">Base <span>⌄</span></span><b>65.00 USDC</b></div>
+                <div class="preview-details"><div><span>Recipient</span><strong>north / form</strong></div><div><span>Network</span><strong>Base · demo</strong></div></div>
+                <button class="preview-pay" type="button" data-scroll-demo>Simulate payment <span>↗</span></button>
+                <div class="preview-status"><span class="status-icon">~</span><div><strong>Awaiting your review</strong><small>Nothing will be transferred</small></div><span class="status-arrow">↗</span></div>
+              </div>
+            </div>
+            <div class="floating-note note-one"><span class="note-icon">✦</span><div><strong>Easy to understand</strong><small>Every detail in view</small></div></div>
+            <div class="floating-note note-two"><span class="note-ring"></span><div><strong>Demo mode</strong><small>No funds transferred</small></div></div>
+          </div>
+        </section>
+
+        <section class="intro-band section-pad" aria-label="FluxP introduction">
+          <div class="section-kicker">The missing middle</div>
+          <div class="intro-statement">Crypto should feel as familiar as<br /><em>any other way to pay.</em></div>
+          <div class="intro-aside"><span class="aside-line"></span><p>FluxP is an early product concept focused on the part that matters most: making the moment of payment feel clear, calm, and considered.</p></div>
+        </section>
+
+        <section class="demo-section section-pad" id="demo">
+          <div class="section-heading demo-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> Interactive product preview</div><h2>See how a FluxP<br /><em>payment works.</em></h2></div><p>Explore the checkout experience we're building. This is a product preview; no real payment will be made.</p></div>
+          <div class="demo-shell">
+            <div class="store-column">
+              <div class="store-header"><div><span class="mini-label">A fictional store</span><h3>North / Form</h3></div><span class="bag-icon">⌂</span></div>
+              <div class="product-list" id="product-list"></div>
+              <div class="store-footnote"><span>↳</span> Select a product to begin</div>
+            </div>
+            <div class="checkout-column" id="checkout-panel">
+              <div class="checkout-top"><div><span class="mini-label">FluxP checkout</span><h3 id="checkout-title">Complete your order</h3></div><div class="demo-badge"><span></span> DEMO</div></div>
+              <div id="checkout-body"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="workflow-section section-pad" id="how-it-works">
+          <div class="section-heading workflow-heading"><div><div class="eyebrow light"><span class="eyebrow-dot"></span> Intended workflow</div><h2>Three steps to a<br /><em>better handoff.</em></h2></div><p>These describe the product workflow FluxP is exploring — not currently available live functionality.</p></div>
+          <div class="workflow-grid">
+            <article class="workflow-card"><div class="step-number">01</div><div class="step-art art-create"><span class="art-orbit orbit-a"></span><span class="art-orbit orbit-b"></span><span class="art-node node-a"></span><span class="art-node node-b"></span><span class="art-node node-c"></span></div><div class="step-copy"><h3>Create a payment</h3><p>A merchant prepares a checkout request with the product, amount, and intended payment details.</p></div></article>
+            <article class="workflow-card"><div class="step-number">02</div><div class="step-art art-review"><div class="review-card"><span class="review-check">✓</span><span>Review details</span><b>$65.00</b></div></div><div class="step-copy"><h3>Review and pay</h3><p>The customer reviews the amount, asset, and network before a future supported wallet integration.</p></div></article>
+            <article class="workflow-card"><div class="step-number">03</div><div class="step-art art-confirm"><span class="confirm-ring">✓</span><span class="confirm-line"></span><span class="confirm-line short"></span></div><div class="step-copy"><h3>Confirm the result</h3><p>The system will be designed to provide a clear status after the appropriate verification process.</p></div></article>
+          </div>
+        </section>
+
+        <section class="business-section section-pad" id="businesses">
+          <div class="business-visual"><div class="business-grid"></div><div class="request-card"><div class="request-top"><span class="merchant-mark dark">n</span><span>Payment request</span><span class="request-menu">•••</span></div><div class="request-price"><span>Request amount</span><strong>$240.00</strong><small>For a custom design package</small></div><div class="request-row"><span>Requested from</span><b>customer</b></div><div class="request-row"><span>Status</span><b class="status-green">Ready to share</b></div><div class="share-button">Share payment link <span>↗</span></div></div><span class="business-stamp">FOR ONLINE<br />COMMERCE</span></div>
+          <div class="business-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> For businesses</div><h2>A simpler checkout<br />for <em>online commerce.</em></h2><p>FluxP aims to help online sellers request crypto payments without making the customer experience unnecessarily complicated.</p><ul class="capability-list"><li><span>01</span><strong>Payment links</strong><small>For products and services.</small></li><li><span>02</span><strong>Clear instructions</strong><small>Payment details customers can follow.</small></li><li><span>03</span><strong>Readable records</strong><small>Transaction and payment status at a glance.</small></li><li><span>04</span><strong>Built for the web</strong><small>For stores, freelancers, and digital businesses.</small></li></ul><div class="disclosure">Planned and exploratory capabilities <span>↗</span></div></div>
+        </section>
+
+        <section class="principles-section section-pad"><div class="principles-intro"><div class="eyebrow"><span class="eyebrow-dot"></span> Product principles</div><h2>Good payments<br /><em>get out of the way.</em></h2></div><div class="principle-list"><article><span class="principle-num">01</span><div class="principle-symbol clarity-symbol">◌</div><div><h3>Clarity</h3><p>Understand exactly what you're paying and which network you're using.</p></div></article><article><span class="principle-num">02</span><div class="principle-symbol simplicity-symbol">↘</div><div><h3>Simplicity</h3><p>Reduce unnecessary steps between choosing and completing a payment.</p></div></article><article><span class="principle-num">03</span><div class="principle-symbol transparency-symbol">⌁</div><div><h3>Transparency</h3><p>Make payment instructions and transaction status easy to understand.</p></div></article></div></section>
+
+        <section class="roadmap-section section-pad" id="roadmap"><div class="roadmap-intro"><div class="eyebrow light"><span class="eyebrow-dot"></span> Looking ahead</div><h2>A considered path<br /><em>forward.</em></h2><p>FluxP is being shaped in stages, with room to learn at every step.</p></div><div class="roadmap-list"><article class="roadmap-item active"><div class="roadmap-marker"><span></span></div><div class="roadmap-meta"><span>Stage 01</span><b>Foundation</b><small>Current focus</small></div><ul><li>Define the payment experience.</li><li>Develop the checkout prototype.</li><li>Refine the customer journey.</li></ul></article><article class="roadmap-item"><div class="roadmap-marker"><span></span></div><div class="roadmap-meta"><span>Stage 02</span><b>Development</b><small>Exploratory</small></div><ul><li>Explore supported wallet integrations.</li><li>Investigate payment verification.</li><li>Design merchant payment requests.</li></ul></article><article class="roadmap-item"><div class="roadmap-marker"><span></span></div><div class="roadmap-meta"><span>Stage 03</span><b>Future</b><small>Exploratory</small></div><ul><li>Explore supported network expansion.</li><li>Develop merchant tools.</li><li>Evaluate broader checkout integrations.</li></ul></article></div><div class="roadmap-note"><span>◎</span> Planned stages · No launch dates announced</div></section>
+
+        <section class="faq-section section-pad" id="faq"><div class="faq-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> Questions, answered</div><h2>Before you<br /><em>get started.</em></h2></div><div class="faq-list"><details open><summary>What is FluxP?<span>+</span></summary><p>FluxP is a product concept focused on making crypto payments clearer and easier for products, services, online stores, and digital businesses.</p></details><details><summary>Can I make a real payment right now?<span>+</span></summary><p>No. The current website is an interactive product preview. Real payment functionality is not yet available.</p></details><details><summary>Does the demo connect to my wallet?<span>+</span></summary><p>No. The demo is self-contained and frontend-only. It never connects to a wallet, requests a signature, or transfers funds.</p></details><details><summary>What cryptocurrencies will FluxP support?<span>+</span></summary><p>Supported assets and networks are still being explored. The options in this preview use sample conversion values only.</p></details><details><summary>Who is FluxP being built for?<span>+</span></summary><p>FluxP is being shaped for people paying online and for stores, freelancers, and digital businesses requesting payment.</p></details></div></section>
+      </main>
+
+      <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span class="ribbon ribbon-a"></span><span class="ribbon ribbon-b"></span></span><span class="brand-name">Flux<span>P</span></span></a><div class="footer-tagline">Crypto payments.<br /><em>Without the friction.</em></div><a class="social-link" href="https://x.com/fluxppay?s=11" target="_blank" rel="noopener noreferrer">Follow on X <span>↗</span></a></div><div class="footer-bottom"><span>© 2026 FluxP · Product concept</span><div><a href="#how-it-works">How it works</a><a href="#demo">Demo</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a></div><span class="footer-disclosure">Product preview — not yet available for real payments.</span></div></footer>
+      <div class="demo-disclosure"><span class="pulse-dot"></span> Interactive product demo — no real funds are transferred.</div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
